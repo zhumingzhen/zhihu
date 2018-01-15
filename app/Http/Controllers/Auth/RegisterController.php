@@ -69,6 +69,7 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'avatar' => '/images/avatars/default.png',
             'confirmation_token' => str_random(40),
+            'settings' => 1,
             'password' => bcrypt($data['password']),
         ]);
         $this->sendVerifyEmailTo($user);
