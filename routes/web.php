@@ -18,3 +18,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+# 邮箱验证url
+Routr::get('/register/verify/{token}',['as' => 'email.verify', 'uses' => 'EmailController@verifyW']);
