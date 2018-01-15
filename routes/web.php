@@ -20,4 +20,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 # 邮箱验证url
-Route::get('/register/verify/{token}',['as' => 'email.verify', 'uses' => 'EmailController@verifyW']);
+Route::get('/register/verify/{token}',['as' => 'email.verify', 'uses' => 'EmailController@verify']);
