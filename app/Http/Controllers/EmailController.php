@@ -22,7 +22,8 @@ class EmailController extends Controller
         $user->save();
 
         Auth::login($user);
-        flash('邮箱验证成功!','success');
+//        flash('邮箱验证成功!','success');
+        flash('邮箱验证成功1!')->success();
         return redirect('/home');
     }
 }
