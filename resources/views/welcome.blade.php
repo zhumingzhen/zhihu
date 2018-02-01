@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    zhihu 1
+                    zhihu
                 </div>
 
                 <div class="links">
